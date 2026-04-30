@@ -16,7 +16,7 @@
           "desc": "Launcher"
         },
         {
-          "keys": "Super + Shift + S",
+          "keys": "Super + Shift + PERIOD",
           "desc": "Control Center"
         },
         {
@@ -59,6 +59,10 @@
         {
           "keys": "Ctrl + Alt + T",
           "desc": "Terminal (Home)"
+        },
+        {
+          "keys": "Super + Ctrl + T",
+          "desc": "Terminal (Float)"
         }
       ]
     },
@@ -281,6 +285,23 @@
         {
           "keys": "Super + Scroll Up",
           "desc": "Prev Workspace (Scroll)"
+        }
+      ]
+    },
+    {
+      "title": "SPECIAL WORKSPACE",
+      "binds": [
+        {
+          "keys": "Super + S",
+          "desc": "Toggle Special Workspace"
+        },
+        {
+          "keys": "Super + Ctrl + S",
+          "desc": "Move to Special Workspace"
+        },
+        {
+          "keys": "Super + Shift + S",
+          "desc": "Restore from Special Workspace"
         }
       ]
     },

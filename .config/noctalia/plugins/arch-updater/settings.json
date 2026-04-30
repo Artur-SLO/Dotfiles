@@ -1,9 +1,10 @@
 {
-  "checkCmd": "(checkupdates; yay -Qua) 2>/dev/null",
+  "systemCmd": "checkupdates 2>/dev/null",
+  "aurCmd": "paru -Qua 2>/dev/null",
   "updateCmd": "kitty -e bash -c 'echo \"Updating System...\";sudo pacman -Syu;yay -Syu; flatpak update; read -n 1 -p \"Press any key to exit...\"'",
   "flatpak": true,
   "noctalia": true,
-  "toast": true,
+  "toast": false,
   "desktopTip": true,
   "hideOnEmpty": false,
   "refreshTimer": true,
@@ -15,5 +16,10 @@
   "enableColorization": true,
   "iconColor": "primary",
   "boldVer": true,
-  "tooltip": true
+  "tooltip": true,
+  "closeButton": true,
+  "boldVerPanel": true,
+  "boldVerDesktop": true,
+  "hoverTip": true,
+  "checkCmd": "(checkupdates; yay -Qua) 2>/dev/null"
 }

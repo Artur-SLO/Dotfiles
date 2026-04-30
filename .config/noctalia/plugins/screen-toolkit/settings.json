@@ -22,5 +22,8 @@
   "detectedCompositor": "hyprland",
   "stateIsRunning": false,
   "stateActiveTool": "",
-  "stateMirrorVisible": false
+  "stateMirrorVisible": false,
+  "ocrResult": "",
+  "ocrCapturePath": "",
+  "translateResult": ""
 }
