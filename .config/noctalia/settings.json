@@ -18,19 +18,18 @@
         "ignoreMouseInput": false,
         "overviewLayer": false,
         "pinnedApps": [
-            "firefox",
             "brave-cinhimbnkkaeohfgghhklpknlkffjgod-Default",
             "com.discordapp.Discord",
             "discord",
             "yazi",
             "nvim",
-            "org.kde.plasma-systemmonitor",
-            "obsidian",
             "org.gnome.World.PikaBackup",
             "proton.vpn.app.gtk",
             "linux-wallpaperengine-gui",
-            "brave-browser",
-            "kitty"
+            "kitty",
+            "brave-hnpfjngllnobngcgfapefoaidbinmjnm-Default",
+            "zen",
+            "btop"
         ],
         "position": "follow_bar",
         "screenshotAnnotationTool": "",
@@ -783,6 +782,10 @@
             {
                 "enabled": true,
                 "id": "yazi"
+            },
+            {
+                "enabled": true,
+                "id": "zenBrowser"
             }
         ],
         "enableUserTheming": false
