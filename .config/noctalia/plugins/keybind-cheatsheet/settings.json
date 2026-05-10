@@ -61,7 +61,7 @@
           "desc": "Terminal (Home)"
         },
         {
-          "keys": "Super + Ctrl + T",
+          "keys": "Super + T",
           "desc": "Terminal (Float)"
         }
       ]

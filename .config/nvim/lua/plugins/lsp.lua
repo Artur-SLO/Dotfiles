@@ -16,6 +16,11 @@ return {
                         "--header-insertion=never",
                     },
                 },
+                pyright = {
+                    handlers = {
+                        ["$/progress"] = function() end,
+                    },
+                },
             },
         },
     },

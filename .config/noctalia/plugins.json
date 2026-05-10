@@ -11,8 +11,16 @@
             "enabled": true,
             "sourceUrl": "https://github.com/noctalia-dev/noctalia-plugins"
         },
+        "file-search": {
+            "enabled": true,
+            "sourceUrl": "https://github.com/noctalia-dev/noctalia-plugins"
+        },
         "giphy-search": {
             "enabled": true,
+            "sourceUrl": "https://github.com/noctalia-dev/noctalia-plugins"
+        },
+        "hyprland-visual-editor": {
+            "enabled": false,
             "sourceUrl": "https://github.com/noctalia-dev/noctalia-plugins"
         },
         "keybind-cheatsheet": {
@@ -20,7 +28,7 @@
             "sourceUrl": "https://github.com/noctalia-dev/noctalia-plugins"
         },
         "linux-wallpaperengine-controller": {
-            "enabled": true,
+            "enabled": false,
             "sourceUrl": "https://github.com/noctalia-dev/noctalia-plugins"
         },
         "network-manager-vpn": {
@@ -29,6 +37,10 @@
         },
         "parallax-wallpaper": {
             "enabled": false,
+            "sourceUrl": "https://github.com/noctalia-dev/noctalia-plugins"
+        },
+        "plugin-manager": {
+            "enabled": true,
             "sourceUrl": "https://github.com/noctalia-dev/noctalia-plugins"
         },
         "pomodoro": {
@@ -48,6 +60,10 @@
             "sourceUrl": "https://github.com/noctalia-dev/noctalia-plugins"
         },
         "show-keys": {
+            "enabled": false,
+            "sourceUrl": "https://github.com/noctalia-dev/noctalia-plugins"
+        },
+        "special-workspaces": {
             "enabled": false,
             "sourceUrl": "https://github.com/noctalia-dev/noctalia-plugins"
         },
@@ -72,11 +88,11 @@
             "sourceUrl": "https://github.com/noctalia-dev/noctalia-plugins"
         },
         "wallcards": {
-            "enabled": true,
+            "enabled": false,
             "sourceUrl": "https://github.com/noctalia-dev/noctalia-plugins"
         },
         "workspace-overview": {
-            "enabled": true,
+            "enabled": false,
             "sourceUrl": "https://github.com/noctalia-dev/noctalia-plugins"
         }
     },

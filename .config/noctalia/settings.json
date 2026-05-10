@@ -29,7 +29,8 @@
             "kitty",
             "brave-hnpfjngllnobngcgfapefoaidbinmjnm-Default",
             "zen",
-            "btop"
+            "btop",
+            "org.kde.filelight"
         ],
         "position": "follow_bar",
         "screenshotAnnotationTool": "",
@@ -171,7 +172,7 @@
                     "showAlbumArt": true,
                     "showArtistFirst": true,
                     "showProgressRing": true,
-                    "showVisualizer": true,
+                    "showVisualizer": false,
                     "textColor": "primary",
                     "useFixedWidth": true,
                     "visualizerType": "wave"
@@ -411,6 +412,12 @@
                         "videoPath": ""
                     },
                     "id": "plugin:screen-toolkit"
+                },
+                {
+                    "defaultSettings": {
+                        "iconColor": "none"
+                    },
+                    "id": "plugin:plugin-manager"
                 }
             ]
         }
@@ -466,9 +473,9 @@
         ],
         "onlySameOutput": true,
         "pinnedApps": [
-            "firefox",
-            "brave-cinhimbnkkaeohfgghhklpknlkffjgod-Default",
-            "kitty"
+            "zen",
+            "kitty",
+            "brave-cinhimbnkkaeohfgghhklpknlkffjgod-Default"
         ],
         "pinnedStatic": true,
         "position": "bottom",
@@ -601,7 +608,7 @@
     "nightLight": {
         "autoSchedule": true,
         "dayTemp": "6500",
-        "enabled": true,
+        "enabled": false,
         "forced": false,
         "manualSunrise": "06:30",
         "manualSunset": "18:30",
@@ -989,15 +996,15 @@
         "randomIntervalSec": 5400,
         "setWallpaperOnAllMonitors": true,
         "showHiddenFiles": false,
-        "skipStartupTransition": true,
+        "skipStartupTransition": false,
         "solidColor": "#fff0f5",
         "sortOrder": "name_desc",
         "transitionDuration": 1500,
         "transitionEdgeSmoothness": 0.05,
         "transitionType": [
             "stripes",
-            "disc",
-            "fade"
+            "fade",
+            "disc"
         ],
         "useOriginalImages": false,
         "useSolidColor": false,
