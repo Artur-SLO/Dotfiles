@@ -20,6 +20,13 @@ return {
                     handlers = {
                         ["$/progress"] = function() end,
                     },
+                    settings = {
+                        python = {
+                            analysis = {
+                                typeCheckingMode = "off",
+                            },
+                        },
+                    },
                 },
             },
         },
@@ -32,5 +39,15 @@ return {
             },
         },
     },
+    -- {
+    --     "folke/noice.nvim",
+    --     opts = {
+    --         lsp = {
+    --             progress = {
+    --                 enabled = false,
+    --             },
+    --         },
+    --     },
+    -- },
 }
 
