@@ -28,6 +28,18 @@ return {
                         },
                     },
                 },
+                jdtls = {
+                    settings = {
+                        java = {
+                            format = {
+                                settings = {
+                                    url = "https://raw.githubusercontent.com/google/styleguide/gh-pages/eclipse-java-google-style.xml",
+                                    profile = "GoogleStyle",
+                                },
+                            },
+                        },
+                    },
+                },
             },
         },
     },
@@ -39,15 +51,5 @@ return {
             },
         },
     },
-    -- {
-    --     "folke/noice.nvim",
-    --     opts = {
-    --         lsp = {
-    --             progress = {
-    --                 enabled = false,
-    --             },
-    --         },
-    --     },
-    -- },
 }
 
