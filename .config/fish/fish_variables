@@ -2,3 +2,4 @@
 # VERSION: 3.0
 SETUVAR FZF_DEFAULT_OPTS:\x1d
 SETUVAR __fish_initialized:4300
+SETUVAR fish_user_paths:/home/slower/\x2ewildfly/wildfly\x2dpreview\x2d40\x2e0\x2e0\x2eFinal/bin
