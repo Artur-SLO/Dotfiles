@@ -27,10 +27,10 @@
             "proton.vpn.app.gtk",
             "linux-wallpaperengine-gui",
             "kitty",
-            "brave-hnpfjngllnobngcgfapefoaidbinmjnm-Default",
             "zen",
             "btop",
-            "org.kde.filelight"
+            "org.kde.filelight",
+            "brave-hnpfjngllnobngcgfapefoaidbinmjnm-Default"
         ],
         "position": "follow_bar",
         "screenshotAnnotationTool": "",
