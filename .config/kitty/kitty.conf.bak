@@ -1,16 +1,19 @@
-# Import colors
-include colors.conf
-
 # Font
 font_family JetBrains Mono Nerd Font
 font_size 10
 
 # Kitty specifics
 disable_ligatures always
-disable_ligaturs no
 enable_audio_bell no
 remember_window_size no
 cursor_blink_interval 0
+
+# Shell
+shell fish
+
+# Scroll
+map page_up scroll_page_up
+map page_down scroll_page_down
 
 # Background and window
 window_padding_width 8
@@ -29,3 +32,18 @@ cursor_shape block
 url_style curly
 open_url_with default
 copy_on_select yes
+
+# Remote control
+allow_remote_control yes
+
+# Binds
+map super+ctrl+t launch --type=os-window --cwd=current
+
+# Tabs
+tab_bar_min_tabs 3
+map ctrl+shift+t new_tab_with_cwd
+
+# BEGIN_KITTY_THEME
+# Noctalia
+include current-theme.conf
+# END_KITTY_THEME

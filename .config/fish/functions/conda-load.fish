@@ -1,3 +1,4 @@
 function conda-load
-    eval "$($HOME/miniconda3/bin/conda shell.fish hook)"
+    source /opt/miniconda3/etc/fish/conf.d/conda.fish
+    conda activate base
 end
