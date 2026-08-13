@@ -8,9 +8,12 @@ if status is-interactive
 end
 
 # Pokemon-colorscripts block
-if not set -q VSCODE_IPC_HOOK; and test "$TERM_PROGRAM" != "vscode"; and not set -q NVIM; and not set -q TMUX
-    ~/.config/fastfetch/fastfetch_pokemon.sh
-end
+# if not set -q VSCODE_IPC_HOOK; and test "$TERM_PROGRAM" != "vscode"; and not set -q NVIM; and not set -q TMUX
+#     ~/.config/fastfetch/fastfetch_pokemon.sh
+# end
 
 # Abbreviations
 abbr --add dotdotnum --regex '^\.\.\d+$' --function multicd
+
+# Created by `pipx` on 2026-08-12 22:34:55
+set PATH $PATH /home/slower/.local/bin
