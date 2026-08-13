@@ -1,55 +1,55 @@
 # Hyprland
 [config]
 
-[templates.hyprland]
-input_path = "~/.config/matugen/templates/hyprland.conf"
-output_path = "~/.config/hypr/components/colors.conf"
-
 [templates.starship]
 input_path = "~/.config/matugen/templates/starship.toml"
 output_path = "~/.config/starship.toml"
 post_hook = "pkill -USR1 fish"
-
-[templates.cava]
-input_path = '~/.config/matugen/templates/cava.ini'
-output_path = "~/.config/cava/themes/colors"
-post_hook = "ps -C cava -o pid=,tty= | awk '$2!=\"tty1\"{print $1}' | xargs -r kill -SIGUSR2"
 
 [templates.fzf]
 input_path = "~/.config/matugen/templates/fzf.sh"
 output_path = "~/.config/fzf/matugen-fzf.sh"
 post_hook= "fish ~/.config/fish/conf.d/fzf.fish"
 
-[templates.pywalfox]
-input_path = "~/.config/matugen/templates/pywalfox.json"
-output_path = "~/.cache/wal/colors.json"
-post_hook = "pywalfox update"
+# [templates.hyprland]
+# input_path = "~/.config/matugen/templates/hyprland.conf"
+# output_path = "~/.config/hypr/components/colors.conf"
 
-[templates.tmux]
-input_path = "~/.config/matugen/templates/tmux.conf"
-output_path = "~/.config/tmux/colors.conf"
-post_hook = "tmux source-file ~/.config/tmux/colors.conf && tmux run-shell '~/.tmux/plugins/tpm/tpm'"
+# [templates.cava]
+# input_path = '~/.config/matugen/templates/cava.ini'
+# output_path = "~/.config/cava/themes/colors"
+# post_hook = "ps -C cava -o pid=,tty= | awk '$2!=\"tty1\"{print $1}' | xargs -r kill -SIGUSR2"
 
-[templates.nvim]
-input_path = "~/.config/matugen/templates/hyprland.conf"
-output_path = "/dev/null"
-post_hook = "pkill -USR1 nvim"
+# [templates.pywalfox]
+# input_path = "~/.config/matugen/templates/pywalfox.json"
+# output_path = "~/.cache/wal/colors.json"
+# post_hook = "pywalfox update"
 
-#[templates.quickshell_overview]
-#input_path  = "~/.config/matugen/templates/quickshell-overview.qml"
-#output_path = "~/.config/quickshell/overview/common/Appearance.colors.qml"
-#post_hook= "~/.config/quickshell/reset-qs.sh;"
+# [templates.tmux]
+# input_path = "~/.config/matugen/templates/tmux.conf"
+# output_path = "~/.config/tmux/colors.conf"
+# post_hook = "tmux source-file ~/.config/tmux/colors.conf && tmux run-shell '~/.tmux/plugins/tpm/tpm'"
 
-#[templates.qs-hyprview]
-#input_path  = "~/.config/matugen/templates/qs-hyprview-template.qml"
-#output_path = "~/.config/quickshell/qs-hyprview/common/Appearance.qml"
+# [templates.nvim]
+# input_path = "~/.config/matugen/templates/hyprland.conf"
+# output_path = "/dev/null"
+# post_hook = "pkill -USR1 nvim"
 
-#[templates.nvim]
-#input_path = "~/.config/matugen/templates/nvim.lua"
-#output_path = "/dev/null"
-#post_hook = "pkill -USR1 nvim"
+# [templates.quickshell_overview]
+# input_path  = "~/.config/matugen/templates/quickshell-overview.qml"
+# output_path = "~/.config/quickshell/overview/common/Appearance.colors.qml"
+# post_hook= "~/.config/quickshell/reset-qs.sh;"
 
-#[templates.wlogout]
-#input_path = "~/.config/noctalia/templates/wlogout.css"
-#output_path = "~/.config/wlogout/colors.css"
-#post_hook = "~/.config/wlogout/update_icons.sh"
+# [templates.qs-hyprview]
+# input_path  = "~/.config/matugen/templates/qs-hyprview-template.qml"
+# output_path = "~/.config/quickshell/qs-hyprview/common/Appearance.qml"
+
+# [templates.nvim]
+# input_path = "~/.config/matugen/templates/nvim.lua"
+# output_path = "/dev/null"
+# post_hook = "pkill -USR1 nvim"
+
+# [templates.wlogout]
+# input_path = "~/.config/noctalia/templates/wlogout.css"
+# output_path = "~/.config/wlogout/colors.css"
+# post_hook = "~/.config/wlogout/update_icons.sh"
