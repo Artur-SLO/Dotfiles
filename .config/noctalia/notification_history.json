@@ -1,0 +1,37 @@
+{
+  "change_serial": 11,
+  "entries": [
+    {
+      "active": false,
+      "close_reason": "expired",
+      "event_serial": 11,
+      "notification": {
+        "actions": [],
+        "app_name": "Hyprshot",
+        "body": "Image saved in /home/slower/Pictures/Screenshots//2026-08-13-205201_hyprshot.png and copied to the clipboard.",
+        "category": null,
+        "desktop_entry": null,
+        "expiry_wall_ms": 1786665129284,
+        "icon": "/home/slower/Pictures/Screenshots//2026-08-13-205201_hyprshot.png",
+        "id": 20,
+        "image_data": {
+          "bits_per_sample": 8,
+          "channels": 4,
+          "has_alpha": true,
+          "height": 57,
+          "image_file": "i_7f25fe9e886391217f46bab73c06a5a4.webp",
+          "row_stride": 384,
+          "width": 96
+        },
+        "origin": "external",
+        "received_wall_ms": 1786665124198,
+        "summary": "Screenshot saved",
+        "timeout": 5000,
+        "urgency": "normal"
+      },
+      "seen": true
+    }
+  ],
+  "next_id": 21,
+  "version": 2
+}

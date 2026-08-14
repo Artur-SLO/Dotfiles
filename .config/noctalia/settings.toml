@@ -1,0 +1,294 @@
+config_version = 12
+
+[audio]
+enable_sounds = true
+
+[bar.default]
+capsule = true
+color = "primary"
+end = [
+    "tray",
+    "notifications",
+    "notes",
+    "widget",
+    "clipboard",
+    "network",
+    "bluetooth",
+    "volume",
+    "brightness",
+    "battery",
+    "session"
+]
+icon_color = "primary"
+margin_ends = 0
+start = [ "launcher", "wallpaper", "workspaces", "cpu", "ram", "temp", "media", "keybinds" ]
+
+[calendar]
+enabled = true
+
+[control_center]
+sidebar_section = "none"
+
+[desktop_widgets]
+enabled = false
+schema_version = 2
+widget_order = []
+
+    [desktop_widgets.grid]
+    cell_size = 16
+    major_interval = 4
+    visible = true
+
+    [desktop_widgets.widget]
+
+[dock]
+auto_hide = true
+enabled = true
+icon_size = 32
+launcher_position = "end"
+pinned = [ "zen", "kitty", "discord", "brave-cinhimbnkkaeohfgghhklpknlkffjgod-Default" ]
+reserve_space = false
+show_dots = true
+
+[hooks]
+wallpaper_changed = "/home/slower/.config/scripts/setup_colors.sh $NOCTALIA_WALLPAPER_PATH"
+
+[location]
+auto_locate = true
+
+[lockscreen_widgets]
+enabled = true
+schema_version = 2
+widget_order = [ "lockscreen-login-box@HDMI-A-1", "lockscreen-widget-0000000000000001", "lockscreen-widget-0000000000000002" ]
+
+    [lockscreen_widgets.grid]
+    cell_size = 16
+    major_interval = 4
+    visible = true
+
+    [lockscreen_widgets.widget."lockscreen-login-box@HDMI-A-1"]
+    box_height = 70.0
+    box_width = 400.0
+    cx = 683.0
+    cy = 403.0
+    output = "HDMI-A-1"
+    rotation = 0.0
+    type = "login_box"
+
+        [lockscreen_widgets.widget."lockscreen-login-box@HDMI-A-1".settings]
+        background_color = "surface_variant"
+        background_opacity = 0.88
+        background_radius = 12.0
+        center_password_text = false
+        input_opacity = 1.0
+        input_radius = 6.0
+        show_caps_lock = true
+        show_keyboard_layout = true
+        show_login_button = true
+
+    [lockscreen_widgets.widget.lockscreen-widget-0000000000000001]
+    box_height = 0.0
+    box_width = 0.0
+    cx = 553.0
+    cy = 283.5
+    output = "HDMI-A-1"
+    rotation = 0.0
+    type = "clock"
+
+    [lockscreen_widgets.widget.lockscreen-widget-0000000000000002]
+    box_height = 0.0
+    box_width = 0.0
+    cx = 781.0
+    cy = 283.5
+    output = "HDMI-A-1"
+    rotation = 0.0
+    type = "audio_visualizer"
+
+        [lockscreen_widgets.widget.lockscreen-widget-0000000000000002.settings]
+        bands = 32
+        show_when_idle = true
+
+[nightlight]
+enabled = true
+temperature_day = 6600
+temperature_night = 5200
+
+[osd.kinds]
+media = false
+
+[plugins]
+enabled = [
+    "noctalia/translator",
+    "noctalia/notes",
+    "yuuto/arch-updater",
+    "kenn/keybind-cheatsheet",
+    "icefish/phone-connect",
+    "thepunkoff/pomodoro",
+    "weinguyen/procmon",
+    "alexander/screen-toolkit"
+]
+
+    [[plugins.source]]
+    kind = "git"
+    location = "https://github.com/noctalia-dev/official-plugins"
+    name = "official"
+
+    [[plugins.source]]
+    kind = "git"
+    location = "https://github.com/noctalia-dev/community-plugins"
+    name = "community"
+
+[shell]
+clipboard_auto_paste = "off"
+screen_time_enabled = true
+
+    [shell.launcher]
+    session_search = true
+
+    [shell.panel]
+    clipboard_position = "auto"
+    control_center_placement = "floating"
+    launcher_position = "auto"
+    polkit_position = "auto"
+    session_placement = "floating"
+    transparency_mode = "soft"
+    wallpaper_placement = "floating"
+
+    [shell.screen_corners]
+    enabled = true
+
+    [shell.screenshot]
+    directory = "/home/slower/Pictures/Screenshots"
+
+    [[shell.session.actions]]
+    action = "lock"
+    countdown_seconds = 0.0
+    enabled = true
+    shortcut = "1"
+    variant = "default"
+
+    [[shell.session.actions]]
+    action = "logout"
+    countdown_seconds = 0.0
+    enabled = true
+    shortcut = "2"
+    variant = "default"
+
+    [[shell.session.actions]]
+    action = "lock_and_suspend"
+    countdown_seconds = 0.0
+    enabled = true
+    shortcut = "3"
+    variant = "default"
+
+    [[shell.session.actions]]
+    action = "reboot"
+    countdown_seconds = 0.0
+    enabled = true
+    shortcut = "4"
+    variant = "default"
+
+    [[shell.session.actions]]
+    action = "shutdown"
+    countdown_seconds = 0.0
+    enabled = true
+    shortcut = "5"
+    variant = "destructive"
+
+    [[shell.session.actions]]
+    action = "command"
+    command = "notify-send 'Noctalia' 'Custom session entry'"
+    countdown_seconds = 0.0
+    enabled = true
+    variant = "default"
+
+[theme]
+builtin = "Noctalia"
+community_palette = "Oxocarbon"
+mode = "dark"
+source = "wallpaper"
+wallpaper_scheme = "m3-tonal-spot"
+
+    [theme.templates]
+    builtin_ids = [ "btop", "cava", "gtk3", "gtk4", "hyprland", "kcolorscheme", "kitty", "qt" ]
+    community_ids = [ "yazi" ]
+
+[wallpaper]
+directory = "/home/slower/Pictures/Wallpapers"
+
+    [wallpaper.automation]
+    enabled = true
+    interval_seconds = 3600
+
+    [wallpaper.default]
+    path = "/home/slower/Pictures/Wallpapers/cat1.png"
+
+    [wallpaper.last]
+    path = "/home/slower/Pictures/Wallpapers/cat1.png"
+
+    [wallpaper.monitors.HDMI-A-1]
+    path = "/home/slower/Pictures/Wallpapers/cat1.png"
+
+[widget.clipboard]
+icon_color = "primary"
+
+[widget.clock]
+color = "primary"
+
+[widget.control-center]
+color = "primary"
+
+[widget.cpu]
+show_label = false
+show_value = false
+
+[widget.keybinds]
+type = "kenn/keybind-cheatsheet:keybinds"
+
+[widget.launcher]
+color = "primary"
+
+[widget.media]
+album_art_only = true
+art_size = 18
+color = "primary"
+
+[widget.network]
+icon_color = "primary"
+show_label = false
+
+[widget.notes]
+type = "noctalia/notes:notes"
+
+[widget.notifications]
+color = "primary"
+
+[widget.ram]
+show_label = false
+show_value = false
+
+[widget.session]
+color = "primary"
+
+[widget.temp]
+show_label = false
+show_value = false
+
+[widget.tray]
+drawer = true
+icon_color = "primary"
+
+[widget.volume]
+color = "primary"
+show_label = false
+
+[widget.wallpaper]
+color = "primary"
+
+[widget.widget]
+show_count = false
+type = "yuuto/arch-updater:widget"
+
+[widget.workspaces]
+pill_scale = 0.90000000000000002
+show_labels = false

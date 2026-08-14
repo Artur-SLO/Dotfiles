@@ -14,14 +14,14 @@ local fileManager = "dolphin"
 
 local mainMod = "SUPER"
 
--- 1. MENUS AND APPS
+-- 1. Menus and Apps
 
 hl.bind(mainMod .. " + " .. "E", hl.dsp.exec_cmd(fileManager)) --"File Manager"
 hl.bind(mainMod .. " + " .. "B", hl.dsp.exec_cmd(browser)) --"Browser"
 hl.bind("CTRL" .. " + " .. "SPACE", hl.dsp.exec_cmd("noctalia msg panel-toggle launcher")) --"Launcher"
 hl.bind(mainMod .. " + " .. "SHIFT" .. " + " .. "COMMA", hl.dsp.exec_cmd("noctalia msg panel-toggle control-center")) --"Control Center"
 hl.bind(mainMod .. " + " .. "SHIFT" .. " + " .. "PERIOD", hl.dsp.exec_cmd("noctalia msg settings-toggle")) --"Settings"
-hl.bind("ALT" .. " + " .. "TAB", hl.dsp.exec_cmd("noctalia msg window-switcher")) --"Settings"
+hl.bind("ALT" .. " + " .. "TAB", hl.dsp.exec_cmd("noctalia msg window-switcher")) --"Window Switcher"
 hl.bind(mainMod .. " + " .. "home", hl.dsp.exec_cmd("noctalia msg session lock")) --"Lock Screen"
 hl.bind(mainMod .. " + " .. "CTRL" .. " + " .. "C", hl.dsp.exec_cmd("noctalia msg panel-toggle clipboard")) --"Clipboard"
 hl.bind(mainMod .. " + " .. "CTRL" .. " + " .. "E", hl.dsp.exec_cmd("noctalia msg panel-toggle launcher /emo")) --"Emoji"
@@ -29,8 +29,8 @@ hl.bind(mainMod .. " + " .. "CTRL" .. " + " .. "T", hl.dsp.exec_cmd("noctalia ms
 hl.bind(mainMod .. " + " .. "CTRL" .. " + " .. "G", hl.dsp.exec_cmd("noctalia msg panel-toggle launcher /nt")) --"Notes"
 hl.bind(mainMod .. " + " .. "CTRL" .. " + " .. "W", hl.dsp.exec_cmd("noctalia msg panel-toggle wallpaper")) --"Wallpaper Selector"
 hl.bind(mainMod .. " + " .. "CTRL" .. " + " .. "R", hl.dsp.exec_cmd("noctalia msg wallpaper-random")) --"Randomize Wallpaper"
-hl.bind(mainMod .. " + " .. "SLASH", hl.dsp.exec_cmd("qs -c \"noctalia-shell\" ipc call plugin:keybind-cheatsheet toggle")) --"Keybinds Cheat Sheet"
-hl.bind(mainMod .. " + CTRL + N", hl.dsp.exec_cmd("~/.config/noctalia/reload.sh"))
+hl.bind(mainMod .. " + " .. "SLASH", hl.dsp.exec_cmd("noctalia msg panel-toggle kenn/keybind-cheatsheet:cheatsheet")) --"Keybinds Cheat Sheet"
+hl.bind(mainMod .. " + CTRL + N", hl.dsp.exec_cmd("~/.config/noctalia/reload.sh")) --"Reload Config"
 
 -- 2. TERMINAL SHORTCUTS
 
