@@ -103,6 +103,17 @@ hl.window_rule({
 })
 
 hl.window_rule({
+    name  = "zed",
+    match = {
+        class = "dev.zed.Zed",
+        title = "Zed — Settings",
+    },
+    float = true,
+    size = { 900, 600 },
+    center = 1,
+})
+
+hl.window_rule({
     name  = "noctalia-settings",
     match = {
         class = "dev.noctalia.Noctalia",

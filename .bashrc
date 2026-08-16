@@ -6,10 +6,10 @@
 [[ $- != *i* ]] && return
 
 # Initialization
-if [[ -z "$VSCODE_IPC_HOOK" && "$TERM_PROGRAM" != "vscode" && "$NVIM" == "" ]]; then
-    # pokemon-colorscripts -r --no-title
-    clear && ~/.config/fastfetch/fastfetch_pokemon.sh
-fi
+# if [[ -z "$VSCODE_IPC_HOOK" && "$TERM_PROGRAM" != "vscode" && "$NVIM" == "" ]]; then
+#     # pokemon-colorscripts -r --no-title
+#     clear && ~/.config/fastfetch/fastfetch_pokemon.sh
+# fi
 
 export QT_QPA_PLATFORMTHEME=kde
 export XDG_MENU_PREFIX=arch-
@@ -27,5 +27,5 @@ alias cmatrix='cmatrix -C blue -b'
 alias terminal-rain='terminal-rain --rain-color blue --lightning-color white'
 alias wlogout='wlogout -b 4'
 alias config-hyprland='nvim ~/.config/hypr/components/'
-eval "$(starship init bash)"
+# eval "$(starship init bash)"
 PS1='[\u@\h \W]\$ '

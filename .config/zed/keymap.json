@@ -1,0 +1,83 @@
+// Zed keymap
+//
+// For information on binding keys, see the Zed
+// documentation: https://zed.dev/docs/key-bindings
+//
+// To see the default key bindings run `zed: open default keymap`
+// from the command palette.
+[
+  {
+    "context": "Workspace",
+    "bindings": {
+      // Toggle left dock (Project Panel)
+      "space e": "workspace::ToggleLeftDock",
+
+      // Settings and keymaps navigation
+      "alt-s": "zed::OpenSettings",
+      "alt-k": "zed::OpenKeymap",
+      "alt-S": "zed::OpenSettingsFile",
+      "alt-K": "zed::OpenKeymapFile",
+
+      // Pane navigation (directional focus between splits and docks)
+      "space h": "workspace::ActivatePaneLeft",
+      "space l": "workspace::ActivatePaneRight",
+    },
+  },
+  {
+    "context": "Editor && vim_mode == normal",
+    "bindings": {
+      // LSP actions
+      "space i": "editor::OrganizeImports",
+      "space f": "editor::Format",
+      "space j": "editor::GoToDiagnostic",
+      "space k": "editor::GoToPreviousDiagnostic",
+      "space b": "outline::Toggle",
+
+      // Tab / Buffer cycling
+      "shift-h": "pane::ActivatePreviousItem",
+      "shift-l": "pane::ActivateNextItem",
+      "space w": "pane::CloseActiveItem",
+      "space r": "pane::CloseOtherItems",
+
+      // Delete/Change without overriding default register (black hole "_ equivalent)
+      "x": ["workspace::SendKeystrokes", "\" _ x"],
+      "space d": ["workspace::SendKeystrokes", "\" _ d"],
+
+      // Half-page vertical scroll and center cursor (zz)
+      "ctrl-d": ["workspace::SendKeystrokes", "ctrl-d z z"],
+      "ctrl-u": ["workspace::SendKeystrokes", "ctrl-u z z"],
+
+      // Search navigation and center cursor (zzzv)
+      "n": ["workspace::SendKeystrokes", "n z z z v"],
+      "N": ["workspace::SendKeystrokes", "N z z z v"],
+    },
+  },
+  {
+    "context": "Editor && vim_mode == visual",
+    "bindings": {
+      // Visual delete/change without register pollution
+      "space d": ["workspace::SendKeystrokes", "\" _ d"],
+    },
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      // Command palette
+      "space p": "command_palette::Toggle",
+
+      // Code folding
+      "z c": "editor::Fold",
+      "z o": "editor::UnfoldLines",
+      "z C": "editor::FoldAll",
+      "z O": "editor::UnfoldAll",
+    },
+  },
+  {
+    "context": "!Editor",
+    "bindings": {
+      // Menu list navigation
+      "j": "menu::SelectNext",
+      "k": "menu::SelectPrevious",
+    },
+  },
+]

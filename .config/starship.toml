@@ -31,40 +31,40 @@ add_newline = true
 palette = "normal"
 
 [palettes.normal]
-arrow = "#b2c5ff" # C1
-os = "#b2c5ff" # C1
-os_admin = "#182e60" # C2
-text_color = "#121318" # C6
-directory = "#182e60" # C2
-text_light = "#b2c5ff" # C1
-time = "#e1bbdc" # C9
-duration = "#1e1f25" #C4
+arrow = "#ddc66e" # C1
+os = "#ddc66e" # C1
+os_admin = "#3a3000" # C2
+text_color = "#16130b" # C6
+directory = "#3a3000" # C2
+text_light = "#ddc66e" # C1
+time = "#aad0b2" # C9
+duration = "#221f17" #C4
 
 # Cores dos módulos sincronizadas com a paleta
-git = "#e1bbdc"
-git_status = "#5a3d59"
+git = "#aad0b2"
+git_status = "#2c4e37"
 
-node = "#b2c5ff"
+node = "#ddc66e"
 
-python = "#c0c6dd"
-rust = "#dce2f9"
+python = "#d2c6a1"
+rust = "#efe2bc"
 
-java = "#e1bbdc"
-scala = "#fed7f9"
+java = "#aad0b2"
+scala = "#c6eccd"
 
-c = "#292a2f"
-zig = "#33343a"
+c = "#2d2a21"
+zig = "#38352b"
 
-dart = "#314578"
-swift = "#404659"
+dart = "#544600"
+swift = "#4e462a"
 
 ruby = "#ffb4ab"
-elixir = "#5a3d59"
+elixir = "#2c4e37"
 
-lua = "#b2c5ff"
-julia = "#c0c6dd"
+lua = "#ddc66e"
+julia = "#d2c6a1"
 
-crystal = "#1e1f25"
+crystal = "#221f17"
 
 [username]
 style_user = 'os'
