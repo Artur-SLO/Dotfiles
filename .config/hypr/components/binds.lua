@@ -25,8 +25,7 @@ hl.bind("ALT" .. " + " .. "TAB", hl.dsp.exec_cmd("noctalia msg window-switcher")
 hl.bind(mainMod .. " + " .. "home", hl.dsp.exec_cmd("noctalia msg panel-toggle session"), { desc = "Lock Screen" })
 hl.bind(mainMod .. " + " .. "CTRL" .. " + " .. "C", hl.dsp.exec_cmd("noctalia msg panel-toggle clipboard"), { desc = "Clipboard" })
 hl.bind(mainMod .. " + " .. "CTRL" .. " + " .. "E", hl.dsp.exec_cmd("noctalia msg panel-toggle launcher /emo"), { desc = "Emoji" })
-hl.bind(mainMod .. " + " .. "CTRL" .. " + " .. "T", hl.dsp.exec_cmd("noctalia msg panel-toggle launcher /tr"), { desc = "Translate" })
-hl.bind(mainMod .. " + " .. "CTRL" .. " + " .. "G", hl.dsp.exec_cmd("noctalia msg panel-toggle launcher /nt"), { desc = "Notes" })
+hl.bind(mainMod .. " + " .. "CTRL" .. " + " .. "G", hl.dsp.exec_cmd("noctalia msg panel-toggle noctalia/notes:panel"), { desc = "Notes" })
 hl.bind(mainMod .. " + " .. "CTRL" .. " + " .. "W", hl.dsp.exec_cmd("noctalia msg panel-toggle wallpaper"), { desc = "Wallpaper Selector" })
 hl.bind(mainMod .. " + " .. "CTRL" .. " + " .. "R", hl.dsp.exec_cmd("noctalia msg wallpaper-random"), { desc = "Randomize Wallpaper" })
 hl.bind(mainMod .. " + " .. "SLASH", hl.dsp.exec_cmd("noctalia msg panel-toggle blackbartblues/keymap:panel"), { desc = "Keybinds Cheat Sheet" })
@@ -37,11 +36,11 @@ hl.bind(mainMod .. " + CTRL + N", hl.dsp.exec_cmd("~/.config/noctalia/reload.sh"
 hl.bind("CTRL + ALT" .. " + " .. "T", hl.dsp.exec_cmd(terminal), { desc = "Terminal (Home)" })
 hl.bind(mainMod .. " + " .. "T", hl.dsp.exec_cmd("kitty --class floatterm"), { desc = "Terminal (Float)" })
 
--- 3. Screenshot and Color Picker
+-- 3. Toolkit
 
-hl.bind("PRINT", hl.dsp.exec_cmd("flock -n /tmp/hyprshot.lock hyprshot -m region -o ~/Pictures/Screenshots/"), { desc = "Screenshot Region" })
-hl.bind(mainMod .. " + " .. "PRINT", hl.dsp.exec_cmd("flock -n /tmp/hyprshot.lock hyprshot -m window -o/home/slower/Pictures/Screenshots/"), { desc = "Screenshot Window" })
-hl.bind(mainMod .. " + " .. "CTRL" .. " + " .. "PRINT", hl.dsp.exec_cmd("flock -n /tmp/hyprshot.lock hyprpicker -a -n"), { desc = "Color Picker" })
+hl.bind("PRINT", hl.dsp.exec_cmd("flock -n /tmp/hyprshot.lock noctalia msg screenshot-region"), { desc = "Screenshot/Print" })
+hl.bind(mainMod .. " + " .. "PRINT", hl.dsp.exec_cmd("noctalia msg plugin alexander/screen-toolkit:service all toggle"), { desc = "Toggle Toolkit" })
+hl.bind(mainMod .. " + " .. "CTRL" .. " + " .. "PRINT", hl.dsp.exec_cmd("noctalia msg panel-toggle oldirtty/color_picker:panel"), { desc = "Toggle Color Picker" })
 
 -- 4. Window Management
 

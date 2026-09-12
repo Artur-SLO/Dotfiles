@@ -122,5 +122,13 @@ hl.window_rule({
     size = { 900, 600 },
 })
 
-
--- Intellij
+hl.window_rule({
+    name  = "cli-apps-float",
+    match = {
+        class = "kitty",
+        title = ".*(btop|htop|yazi|lazygit|lazysql|nvtop|ncdu).*",
+    },
+    float  = true,
+    size   = { 900, 600 },
+    center = 1,
+})

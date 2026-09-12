@@ -1,5 +1,6 @@
 [audio]
 enable_sounds = true
+notification_sound = ""
 
 [bar.default]
 capsule = true
@@ -345,3 +346,5 @@ type = "yuuto/arch-updater:widget"
 [widget.workspaces]
 pill_scale = 0.9
 show_labels = false
+
+
